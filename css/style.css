@@ -1,5 +1,136 @@
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("../fonts/.eot");
+  src: url("../fonts/.eot?#iefix") format("embedded-opentype"), url("../fonts/.woff") format("woff"), url("../fonts/.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Proxima Nova Light', sans-serif;
+  margin: auto;
+  background-image: url("../img/background.jpg");
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  max-width: 1220px;
+}
+
+.content {
+  background-color: #fff;
+}
+
+.header {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__list-item {
+  margin: 1rem;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: black;
+}
+
+.header__contacts {
+  text-align: center;
+}
+
+.header__contacts-text {
+  font-size: 1.5rem;
+  margin: auto 0.5rem;
+}
+
+.footer {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  background-color: #fff;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  min-height: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instagram {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.instagram:hover {
+  color: #C84C72;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.instagram__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instagram__text {
+  margin-left: 0.3rem;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
