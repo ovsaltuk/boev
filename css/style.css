@@ -16,14 +16,14 @@
 
 body {
   font-family: 'Proxima Nova Light', sans-serif;
-  margin: auto;
-  background-image: url("../img/background.jpg");
-  min-height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr auto;
       grid-template-rows: 1fr auto;
+  margin: auto;
+  background-image: url("../img/background.jpg");
   max-width: 1220px;
+  min-height: 100%;
 }
 
 .content {
@@ -42,31 +42,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.navbar__list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navbar__list-item {
-  margin: 1rem;
-}
-
-.navbar__link {
-  text-decoration: none;
-  color: black;
-}
-
-.header__contacts {
-  text-align: center;
-}
-
-.header__contacts-text {
-  font-size: 1.5rem;
-  margin: auto 0.5rem;
 }
 
 .footer {
@@ -123,6 +98,40 @@ body {
 
 .instagram__text {
   margin-left: 0.3rem;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.contacts__text {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  margin: auto 0.5rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+}
+
+.nav__list-item {
+  margin: 1rem;
+}
+
+.nav__link {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
 * {
