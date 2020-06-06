@@ -1,0 +1,17 @@
+.examples
+    display: grid
+    grid-template-columns: 1fr
+    &__item
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 2em
+        padding: 1em
+        align-items: center
+    &__item-image
+        max-width: 100%
+        border-radius: 10%
+        &_reverce-position
+            order: 2
+    &__item-text
+        +light
+        
