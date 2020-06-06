@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Proxima Nova Semibold';
   src: url("../fonts/.eot");
-  src: url("../fonts/.eot?#iefix") format("embedded-opentype"), url("../fonts/.woff") format("woff"), url("../fonts/.ttf") format("truetype");
+  src: url("../fonts/.eot?#iefix") format("embedded-opentype"), url("../fonts/.woff") format(".woff"), url("../fonts/.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Proxima Nova Light';
   src: url("../fonts/ProximaNova-Light.eot");
-  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format(".woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -169,6 +169,14 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  margin-top: 3em;
+}
+
+.examples__title {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 4em;
+  margin: 1em 0 1em 0;
+  text-align: center;
 }
 
 .examples__item {
@@ -197,6 +205,10 @@ body {
 .examples__item-text {
   font-family: 'Proxima Nova Light', sans-serif;
   font-size: 1.1em;
+}
+
+.map {
+  margin-top: 5em;
 }
 
 * {
